@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="doan" transaction-type="RESOURCE_LOCAL">
+		<class>model.Ctdh</class>
+		<class>model.CtdhPK</class>
+		<class>model.Donhang</class>
+		<class>model.Giohang</class>
+		<class>model.GiohangPK</class>
+		<class>model.Khachhang</class>
+		<class>model.Quantri</class>
+		<class>model.Quocgia</class>
+		<class>model.Sach</class>
+		<class>model.Tacgia</class>
+		<class>model.Theloai</class>
+		<class>model.Yeuthich</class>
+		<class>model.YeuthichPK</class>
+		<class>model.Sachbanchay</class>
+		<class>model.Sachyeuthich</class>
+		<class>model.Vaitro</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=Cuahangsach"/>
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value="12345"/>
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
